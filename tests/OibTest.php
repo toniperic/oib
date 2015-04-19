@@ -25,8 +25,8 @@ class OibTest extends PHPUnit_Framework_TestCase
      */
     public function it_validates_an_array_of_oibs()
     {
-        $oibs = [71481280786, 64217529143, 'foo'];
+        $oibs = array(71481280786, 64217529143, 'foo');
 
-        $this->assertEquals([$oibs[0] => true, $oibs[1] => true, $oibs[2] => false], Oib::validate($oibs));
+        $this->assertEquals(array($oibs[0] => true, $oibs[1] => true, $oibs[2] => false), Oib::validate($oibs));
     }
  }
