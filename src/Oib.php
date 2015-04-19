@@ -14,7 +14,7 @@ class Oib
     {
         if (is_array($data)) {
             foreach ($data as $oib) {
-                $result[$oib] = static::check($oib);
+                $result[(string)$oib] = static::check($oib);
             }
 
             return $result;

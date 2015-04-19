@@ -7,28 +7,28 @@ Personal Identification Number _(Croatian: Osobni identifikacijski broj or OIB)_
 Just pull the package via Composer
 ```js
 "require": {
-    "toniperic/oib": "~1.3"
+    "toniperic/oib": "~1.0"
 }
 ```
 
 ## Usage
 You can check whether an OIB is valid likewise
 ```php
-Oib::check('foo'); // false
-Oib::check(71481280786); // true
+Oib::validate('foo'); // false
+Oib::validate(71481280786); // true
 ```
 
 You could also specify an array as first parameter, likewise
 ```php
-Oib::check(array(71481280786, 64217529143, 'foo'));
+Oib::validate(array(71481280786, 64217529143, 'foo'));
 ```
 and the returned result would be 
 ```php
-array(
-	71481280786 => true,
-	64217529143 => true,
-	'foo' => false
-)
+array(3) {              
+  ["71481280786"] => bool(true)            
+  ["64217529143"] => bool(true)            
+  ["foo"] => bool(false)           
+}                       
 ```
 
 Feel free to check the tests if you still can't understand how the package works.
