@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/toniperic/oib.svg?branch=master)](https://travis-ci.org/toniperic/oib)
+[![Latest Stable Version](https://poser.pugx.org/toniperic/oib/v/stable.svg)](https://packagist.org/packages/toniperic/oib)
+[![License](https://poser.pugx.org/toniperic/oib/license.svg)](https://packagist.org/packages/toniperic/oib)
 
 ## Introduction
 Personal Identification Number _(Croatian: Osobni identifikacijski broj or OIB)_ is a permanent national identification number of every Croatian citizen and legal persons domiciled in the Republic of Croatia.
